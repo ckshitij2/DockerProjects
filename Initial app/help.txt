@@ -1,0 +1,7 @@
+**************************************************
+        HOW TO DO THE LOCAL TESTING
+**************************************************
+
+1. BUILD THE DOCKER IMAGE: docker build -t user-enrollment-frontend .
+2. TEST THE APP BY RUNNING IT ON A CONTAINER LOCALLY: docker run -d -p 8080:80 user-enrollment-frontend
+

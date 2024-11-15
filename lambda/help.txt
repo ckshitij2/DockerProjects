@@ -1,0 +1,2 @@
+1. Build the Docker Image:docker build -t my-lambda-container .
+2. Test the Docker Image Locally (Optional):sam local invoke --template sam-template.yaml

@@ -1,0 +1,54 @@
+1. General Commands
+
+docker version : Check the installed Docker version.
+
+docker info : Display detailed system-wide information about Docker.
+
+docker help : Display a list of Docker commands or help for a specific command.
+
+2. Image Management
+docker images : List all locally available Docker images.
+
+docker pull <image> : Download an image from a registry (e.g., Docker Hub).
+
+docker build -t <image-name>:<tag> . : Build an image from a Dockerfile in the current directory.
+
+docker tag <image> <new-image-name>:<new-tag> : Tag an image with a new name or tag.
+
+docker rmi <image> : Remove one or more images.
+
+3. Container Management
+docker ps : List running containers.
+
+docker ps -a : List all containers (running and stopped).
+
+docker run <image> : Start a container from an image.
+
+docker run -d <image> : Start a container in detached mode (background).
+
+docker run -it <image> : Start an interactive terminal session inside a container.
+
+docker stop <container> : Stop a running container.
+
+docker start <container> : Start a stopped container.
+
+docker restart <container> : Restart a running container.
+
+docker rm <container> : Remove one or more stopped containers.
+
+
+4. Logs and Debugging
+docker logs <container> : View logs of a container.
+
+docker exec <container> <command> : Execute a command inside a running container.
+
+docker inspect <container> : Display detailed information about a container.
+
+docker stats: Show real-time resource usage of containers.
+
+7. Cleanup Commands
+docker system prune: Remove unused data (containers, images, volumes, etc.).
+
+docker image prune: Remove dangling (unused) images.
+
+docker container prune: Remove stopped containers.
